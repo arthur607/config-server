@@ -1,0 +1,15 @@
+spring:
+  #config:
+    #import: configserver
+  application:
+    name: greeting-service
+greeting-service:
+  greeting: "ola"
+  default-value: "prod"
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+
